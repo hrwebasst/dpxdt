@@ -660,7 +660,15 @@ Marks a release candidate as having all runs reported.
 
 ## Deployment
 
-### Sqlite instance
+### The Docker Way
+
+Running this command will give you a fully running dpxdt in a matter of moments.
+
+`docker run -d --restart=unless-stopped -p 5000:5000 motu/dpxdt`
+
+Then visit localhost:5000
+
+### Server with sqlite
 
 Here's how to run a production-grade version of the server on your a machine using sqlite as the database. This will also work on VMs if you put the deployment directory on a persistent filesystem.
 
